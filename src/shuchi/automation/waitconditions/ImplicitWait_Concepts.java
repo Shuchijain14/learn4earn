@@ -28,7 +28,6 @@ public class ImplicitWait_Concepts {
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(1));
 		driver.manage().timeouts().pageLoadTimeout(Duration.ofSeconds(10));
 		
-		
 		driver.get("https://www.rediff.com");
 		
 		WebElement footer = driver.findElement(By.xpath("//div[@class = 'footer alignC']"));

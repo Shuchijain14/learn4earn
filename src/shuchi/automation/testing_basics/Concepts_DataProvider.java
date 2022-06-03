@@ -5,17 +5,19 @@ import org.testng.annotations.Test;
 
 public class Concepts_DataProvider
 {
+	//Technically you guys need to remember 4 steps
+	
 	@Test(dataProvider = "getData")
 	public void RegisterNewUser(String user,String browser,String PANCARD, int userid)
 	{
 		
 	}
 	
-	@DataProvider
+	@DataProvider     //Step1 - it returns a 2 dimensional Object array
 	
 	public Object[][] getData()
 	{
-		Object[][] data = new Object[3][4];
+		Object[][] data = new Object[3][4]; 		//Step2 - enter the data as per the rows and Columns
 		
 		data[0][0]="User1";
 		data[0][1]="Chrome";

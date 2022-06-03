@@ -19,10 +19,10 @@ public class Calender_HardCode
 		WebDriverManager.chromedriver().setup();
 		driver = new ChromeDriver();
 		driver.manage().window().maximize();
-		driver.get("https://seleniumpractise.blogspot.com/2016/08/how-to-handle-calender-in-selenium.html");
+		driver.get("https://seleniumpractise.blogspot.com/2016/08/how-to-handle-calendar-in-selenium.html");
 		driver.findElement(By.id("datepicker")).click();
 		new WebDriverWait(driver, Duration.ofSeconds(10))
-		.until(ExpectedConditions.visibilityOfAllElementsLocatedBy(By.className("ui.datepicker-calender")));
+		.until(ExpectedConditions.visibilityOfAllElementsLocatedBy(By.className("ui.datepicker-calendar")));
 		
 		String MonthYear = driver.findElement(By.className("ui.datepicker-title")).getText();
 		System.out.println(MonthYear);
@@ -39,7 +39,7 @@ public class Calender_HardCode
 			year = MonthYear.split(" ")[1].trim();
 			
 		}
-		driver.findElement(By.xpath("//a[text() = '19']")).click();
+		driver.findElement(By.xpath("//a[text() = '23']")).click();
 		
 		
 

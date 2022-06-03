@@ -19,10 +19,10 @@ public class Calender_Concept
 		WebDriverManager.chromedriver().setup();
 		driver = new ChromeDriver();
 		driver.manage().window().maximize();
-		driver.get("https://seleniumpractise.blogspot.com/2016/08/how-to-handle-calender-in-selenium.html");
+		driver.get("https://seleniumpractise.blogspot.com/2016/08/how-to-handle-calendar-in-selenium.html");
 		driver.findElement(By.id("datepicker")).click();
 		new WebDriverWait(driver, Duration.ofSeconds(5))
-		.until(ExpectedConditions.visibilityOfAllElementsLocatedBy(By.className("ui.datepicker-calender")));
+		.until(ExpectedConditions.visibilityOfAllElementsLocatedBy(By.className("ui.datepicker-calendar")));
 		
 		selectDate("29", "February", "2024");
 	}
